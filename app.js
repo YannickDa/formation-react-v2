@@ -1,6 +1,9 @@
+import React, { Component } from "react"
+import { render } from "react-dom"
+
 const HelloWorld = ({ name }) => <div>Hello {name}</div>
 
-class Application extends React.Component {
+class Application extends Component {
   render() {
     const { name } = this.props
 
@@ -8,4 +11,4 @@ class Application extends React.Component {
   }
 }
 
-ReactDOM.render(<Application name="Yannick"/>, document.getElementById("app"))
+render(<Application name="Yannick"/>, document.getElementById("app"))
