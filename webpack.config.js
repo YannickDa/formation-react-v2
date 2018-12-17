@@ -1,6 +1,7 @@
+const webpack = require("webpack")
 const path = require("path")
 
- module.exports = {
+module.exports = {
   entry: [
     "webpack-dev-server/client?http://localhost:8080",
     "./app.js",
@@ -18,5 +19,8 @@ const path = require("path")
         loader: "babel-loader"
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
