@@ -1,9 +1,11 @@
-const HelloWorld = props => React.createElement("div", null, `Hello ${props.name}`)
+const HelloWorld = ({ name }) => <div>Hello {name}</div>
 
 class Application extends React.Component {
   render() {
-    return React.createElement(HelloWorld, { name: this.props.name })
+    const { name } = this.props
+
+    return <HelloWorld name={name}/>
   }
 }
 
-ReactDOM.render(React.createElement(Application, { name: "Yannick" }), document.getElementById("app"))
+ReactDOM.render(<Application name="Yannick"/>, document.getElementById("app"))
