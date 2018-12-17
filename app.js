@@ -5,3 +5,5 @@ class Application extends React.Component {
     return React.createElement(HelloWorld)
   }
 }
+
+ReactDOM.render(React.createElement(Application), document.getElementById("app"))
