@@ -1,4 +1,4 @@
-const HelloWorld = props => React.createElement("div", null, "Hello")
+const HelloWorld = props => React.createElement("div", null, `Hello ${props.name}`)
 
 class Application extends React.Component {
   render() {
