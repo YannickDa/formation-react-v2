@@ -1,3 +1,4 @@
+import { hot } from "react-hot-loader/root"
 import React, { Component } from "react"
 
 const HelloWorld = ({ name }) => <div>Hello {name}</div>
@@ -10,4 +11,4 @@ class Application extends Component {
   }
 }
 
-export default Application
+export default hot(Application)
