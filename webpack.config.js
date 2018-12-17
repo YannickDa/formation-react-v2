@@ -8,7 +8,8 @@ const path = require("path")
   mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "app.min.js"
+    filename: "app.min.js",
+    publicPath: "/assets/"
   },
   module: {
     rules: [
